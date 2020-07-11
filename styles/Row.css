@@ -1,16 +1,32 @@
+.row {
+    margin-left: 20px !important;
+    color: white !important;
+}
+.row h2 {
+    font-weight: 500 !important;
+}
 .row__posters {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 20px !important;
 }
-
+.row__posterLarge {
+    max-height: 250px !important;
+    transition: ease-in-out 200ms;
+    backface-visibility: hidden;
+}
+.row__posterLarge:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
 .row__posters::-webkit-scrollbar {
     /* tells browsers to not show scrollbars */
     display: none !important;
 }
 .row__poster  {
-    transition: transform 300ms;
+    transition: ease-in-out 200ms;
+    backface-visibility: hidden;
     /* preserves the aspect ratio */
     object-fit: contain;
     /* This will take up whole row  */
@@ -19,7 +35,7 @@
     margin-right: 10px !important;
 }
 .row__poster:hover  {
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 1;
 }
 

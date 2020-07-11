@@ -1,0 +1,42 @@
+.nav {
+    /* This will keep it showing*/
+    position: fixed;
+    top: 0;
+    display: flex !important;
+    width: 100% !important;
+    align-items: center !important;
+    height: 80px !important;
+    transition: ease-in 250ms;
+
+}
+
+.nav__black {
+    background-color: #111 !important;
+}
+
+.nav__logo {
+
+    width:120px ;
+    object-fit: contain !important;
+    cursor: pointer;
+
+    position: fixed !important;
+    left: 20px !important;
+}
+
+.nav button {
+    
+    background-color: #e50914 !important;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px ;
+    line-height: normal !important;
+    padding: 8px 17px !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+
+    position: fixed !important;
+    right: 20px !important;
+}
