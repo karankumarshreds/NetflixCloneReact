@@ -13,7 +13,8 @@ const Index = ({ trending, nfxOriginals, topRated, action, comedy, horror }) => 
             <Banner movies={nfxOriginals.results} />
             <Row title="NETFLIX ORIGINALS"
                 movies={nfxOriginals.results}
-                isLarge={true} />
+                isLarge={true}
+                showVideo={true} />
             <Row title="Trending Now" movies={trending.results} />
             <Row title="Top Rated" movies={topRated.results} />
             <Row title="Action Movies" movies={action.results} />

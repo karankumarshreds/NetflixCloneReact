@@ -18,7 +18,6 @@
 }
 .row__posterLarge:hover {
     transform: scale(1.05);
-    z-index: 1;
 }
 .row__posters::-webkit-scrollbar {
     /* tells browsers to not show scrollbars */
