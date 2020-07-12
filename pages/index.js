@@ -1,9 +1,9 @@
-import endpoints from '../../api/endpoints';
-import request from '../../api/request';
-import '../../styles/global.css';
-import Row from '../../components/Row';
-import Banner from '../../components/Banner';
-import Navbar from '../../components/Navbar';
+import endpoints from '../api/endpoints';
+import request from '../api/request';
+import '../styles/global.css';
+import Row from '../components/Row';
+import Banner from '../components/Banner';
+import Navbar from '../components/Navbar';
 
 const Index = ({ trending, nfxOriginals, topRated, action, comedy, horror }) => {
 

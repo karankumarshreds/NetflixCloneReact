@@ -1,13 +1,17 @@
 import '../styles/Banner.css';
+import { useEffect, useState } from 'react';
 
 const Banner = ({ movies }) => {
+    const [movieData, setMovieData] = useState(undefined);
 
-    const randIndex = Math.floor(Math.random() * 20);
-    const movieData = movies[randIndex];
+    useEffect(() => {
+        const randIndex = Math.floor(Math.random() * 20);
+        setMovieData(movies[randIndex]);
+    }, []);
 
     const truncate = (str, n) => {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-    }
+    };
 
     return (
         <header className="banner"
