@@ -20,3 +20,10 @@ Make a file in / "next.config.js" and enter :
 const withCSS = require('@zeit/next-css')
 module.exports = withCSS();
 ```
+
+##### Deployment
+> firebase login
+
+> firebase init 
+
+> firebase deploy 
